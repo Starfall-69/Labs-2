@@ -46,12 +46,12 @@ __Ход работы:__
 
  Для начала реализуем ввод параметров __a__,__b__, начала и конца интервала __xn__, __xk__ и шага __dx__. 
  
- Формула котрорая нам дана изображена на 
+ Формула которая нам дана изображена на 
 (*рис.1*)
  
-![](https://raw.githubusercontent.com/Starfall-69/Labs-2/master/%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%9A.PNG)
+![](http://cpp.codelearn.ru/lab/lab2pic/pic1.png)</br>
 
-</br>
+
   *рис.1 формула* 
  </br>
  
@@ -183,7 +183,7 @@ int main()
  <tr>
   <td>5</td>
   <td><i>0.7</i></td>
-  <td><i>0.133325</i></td>
+  <td><i>0.552588</i></td>
  </tr><tr>
   <td>6</td>
   <td><i>0.75</i></td>
@@ -258,15 +258,21 @@ int main()
   <td><i>0.00728701</i></td>
  </tr>
  <tr>
+  <td>21</td>
+  <td><i>1.5</i></td>
+  <td><i>0.00250501</i></td>
+ </tr>
+ <tr>
   <td></td>
-  <td><i>fmin = 0.00728701</i></td>
+  <td><i>fmin = 0.00250501</i></td>
   <td><i>fmax = 1.46226</i></td>
  </tr>
  </table> 
  </br>
  
  2) График представлен на рисунке *(рис.2)*</br>
-![](https://raw.githubusercontent.com/Starfall-69/Labs-2/master/gr.png) </br> 
+![](https://raw.githubusercontent.com/Starfall-69/Labs-2/master/%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%9A.PNG)
+ </br> 
 
 *рис.2 График функций с точками min max.*
  
