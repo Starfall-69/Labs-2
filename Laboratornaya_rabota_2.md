@@ -49,7 +49,9 @@ __Ход работы:__
  Формула котрорая нам дана изображена на 
 (*рис.1*)
  
- ![Формула](http://cpp.codelearn.ru/lab/lab2pic/pic1.png " рис.1 формула по варианту 1")</br>
+![](https://raw.githubusercontent.com/Starfall-69/Labs-2/master/%D0%93%D0%A0%D0%90%D0%A4%D0%98%D0%9A.PNG)
+
+</br>
   *рис.1 формула* 
  </br>
  
@@ -63,7 +65,7 @@ using namespace std;
 int main()
 {
   double xn, xk, dx, fx,a,b;// параметры вводимые пользователем
-  double fmin, fmax; // максимальное и минимальное значение функции
+  double fmin, fmax,  eps=pow(10,-15);// максимальное и минимальное значение функции
 
   cout << " a = "; // ввод параметра a
   cin >> a;
@@ -82,8 +84,8 @@ int main()
     xk = xk - xn;
   }
 
-  while (xn<=xk) { // цикл для записи начального згачения fmin, fmax
-    if (xn <= a) {
+  while (xn<xk||abs(xn-xk)<eps) { // цикл для записи начального згачения fmin, fmax
+    if (xn < a||abs(xn-a)<eps) {
       fmin = exp(xn) / (3 + sin(xn));
       fmax = fmin;
       break;
@@ -112,8 +114,8 @@ int main()
 
     cout << "\n\n";
 
-    while (xn <= xk) { // цикл вычисления значений функции с шагом dx
-      if (xn <= a) { 
+    while (xn < xk||abs(xn-xk)<eps) { // цикл вычисления значений функции с шагом dx
+      if (xn < a||abs(xn-a)<eps) { 
 
         fx = exp(xn) / (3 + sin(xn));// вычисление по формуле
         if (fmin > fx) { fmin = fx; } // сравнение fmin и значения функции
